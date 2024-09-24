@@ -1,6 +1,6 @@
 # Mini Projeto: Scraping de Jogos Mais Vendidos da Steam
 
-![Steam Games](https://link-para-imagem.com/imagem.jpg)  <!-- Insira uma imagem relevante aqui -->
+![Steam Games](https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg)  <!-- Insira uma imagem relevante aqui -->
 
 ## Descrição
 
