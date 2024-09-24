@@ -1,1 +1,1 @@
-web: python webscrapingproject/index.py
+web: python src/index.py
