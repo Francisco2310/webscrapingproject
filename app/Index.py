@@ -54,6 +54,6 @@ def api():
 
 
 
-app.run(debug=True)
+app.run()
 
 
