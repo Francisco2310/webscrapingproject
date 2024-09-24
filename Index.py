@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-app = Flask(__name__, template_folder='../templates', static_folder='../static')
+app = Flask(__name__)
 header = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
 }
@@ -38,7 +38,7 @@ def index():
 
 @app.route('/excel')
 def excel():
-    path = '../temp/temp_arquivo.xlsx'
+    path = 'temp/temp_arquivo.xlsx'
     df = pd.DataFrame(data)
     df.to_excel(path, index=False)
     response = send_file(path, as_attachment=True)
@@ -54,6 +54,6 @@ def api():
 
 
 
-app.run()
+app.run(debug=True, port=5001)
 
 
