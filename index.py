@@ -6,7 +6,8 @@ import pandas as pd
 
 app = Flask(__name__)
 header = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'Accept-Language': 'pt-BR'
 }
 url = "https://store.steampowered.com/search/?filter=topsellers&ignore_preferences=1?supportedlang=brazilian"
 response = requests.get(url, headers=header)
